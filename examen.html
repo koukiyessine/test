@@ -1,0 +1,56 @@
+<html>
+<head><title>inscription</title>
+<script language="javascript">
+function verif(){
+
+var no=document.f1.nm.value;
+var prm=document.f1.pr.value;
+var ag=document.f1.ag.value;
+var ml=document.f1.mail.value;
+var com=document.f1.cm.value;
+var se=document.f1.choix[0].checked;
+var se1=document.f1.choix[1].checked;
+
+if(no=="")
+alert("donner les nom");
+else if(prm=="")
+alert("donner les prénom");
+else if(ag=="")
+alert("donner les age");
+else if(ml=="")
+alert("donner les mail");
+else if(com=="")
+alert("donner les commentaire");
+else if(se==false && se1==false)
+alert("donner les sexe");
+}
+
+</script>
+</head>
+<body>
+ <h1 ><font color="BLANCH" size="50" ><b><U>S'inscrire</U></B></font></h1>
+ <br>
+ <br>
+ <form name="f1" method="post" action="" >
+<label>Nom:</label> <label><input type="text" name="nm" placeholder="chaima" required></label>
+<br><br>
+<label>prénom:</label><label><input type="text" name="pr" placeholder="kouki" required></label>
+<br><br>
+<label>age:</label><label><input type="text" name="ag" placeholder="1000 ag" required></label>
+<br><br>
+<label>e-mail:</label><label><input type="text" name="mail" placeholder="koukiyessin5@gmail.com" required></label>
+<br><br>
+<label>commentaire:</label><br><br><label><textarea name="cm" cols="50" rows="15" placeholder="//guksqhihsuhsuighqssqbksqbsjkqbkqsjbsqjkbxjkqsbqjskbsjqkbkhsxx//" required>
+ </textarea> 
+</label>
+<br><br>
+<label>sexe:</label><label><input type="radio" name="choix" ></label>Femme  <label><input type="radio" name="choix"></label>Homme
+<br>
+<br>
+<label><input type="button" value="Valider"  onmouseover="verif()"></label>
+<label><input type="reset" value="Annuler"></label>
+
+
+</form>   
+</body>
+</html>
